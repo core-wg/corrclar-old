@@ -1,5 +1,6 @@
 ---
 stand_alone: true
+ipr: trust200902
 cat: std
 updates: 6690, 7252, 7641, 7959, 8132, 8323
 pi:
@@ -33,7 +34,7 @@ normative:
   RFC8132: etch
   RFC8323: coap-tcp
 informative:
-  I-D.ietf-core-too-many-reqs: RC429
+  RFC8516: RC429
 
 --- abstract
 
@@ -97,7 +98,7 @@ calls for consensus that lead to a new published Internet-Draft;.)
 
 ## Terminology
 
-{::boilerplate bcp14}
+{::boilerplate bcp14-tagged}
 
 When a section of this document makes formal corrections, additions
 or invalidations to text in a referenced RFC, this is clearly summarized.
