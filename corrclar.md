@@ -28,6 +28,12 @@ normative:
   RFC8323: coap-tcp
 informative:
   RFC8516: RC429
+  Err5078:
+    target: "https://www.rfc-editor.org/errata/eid5078"
+    title: Errata Report 5078
+    seriesinfo:
+      RFC: 7252
+    date: false
 
 --- abstract
 
@@ -128,6 +134,36 @@ INCOMPLETE:
 : The value is intended to be current at the time of transmission.
 
 PENDING.
+
+## RFC7252-7.2.1: "ct" Attribute (content-format code)
+
+As has been noted in {{Err5078}}, there is no information in {{RFC7252}}
+about whether the "ct" target attribute can be present multiply or
+not.
+
+The text does indicate that the value of the attribute MAY be "a
+space-separated sequence of Content-Format codes, indicating that
+multiple content-formats are available", but it does not repeat the
+prohibition of multiple instances that the analogously structured "rt"
+and "if" attributes in {{Sections 3.1 and 3.2 of RFC6690}} have.
+
+This appears to be an oversight.
+Published examples in {{Section 4.1 of ?RFC9148}} and {{Section 4.3 of
+?RFC9176}} further illustrate that the space-separated approach is
+generally accepted to be the one to be used.
+There is no gain to be had from allowing both variants, and it would
+be likely to cause interoperability problems.
+
+At the 2022-11-23 CoRE WG interim meeting, there was agreement that
+{{Err5078}} should be marked "VERIFIED", which will be reflected here
+once implemented.
+
+{: vspace='0'}
+INCOMPLETE:
+: The Content-Format code attribute MUST NOT appear more than once in a
+  link.
+
+PENDING (to be VERIFIED).
 
 # IANA Considerations
 
