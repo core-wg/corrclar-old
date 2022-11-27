@@ -1,20 +1,13 @@
 ---
-stand_alone: true
-ipr: trust200902
+v: 3
+
 cat: std
+stream: IETF
 updates: 6690, 7252, 7641, 7959, 8132, 8323
-pi:
-  compact: 'yes'
-  text-list-symbols: "-o*+"
-  subcompact: 'no'
-  sortrefs: 'yes'
-  symrefs: 'yes'
-  strict: 'yes'
-  toc: 'yes'
 title: >
   Constrained Application Protocol (CoAP): Corrections and Clarifications
 abbrev: Corrections and Clarifications to CoAP
-docname: draft-bormann-core-corr-clar
+docname: draft-bormann-core-corr-clar-latest
 author:
  -
     name: Carsten Bormann
