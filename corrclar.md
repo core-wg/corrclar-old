@@ -138,7 +138,7 @@ PENDING.
 ## RFC7252-7.2.1: "ct" Attribute (content-format code)
 
 As has been noted in {{Err5078}}, there is no information in {{RFC7252}}
-about whether the "ct" target attribute can be present multiply or
+about whether the "ct" target attribute can be present multiple times or
 not.
 
 The text does indicate that the value of the attribute MAY be "a
